@@ -1,4 +1,4 @@
-# repplit-for-good-backend
+# reddit-for-good-backend
 🛠️ Reddit Help Backend
 
 This is the Express + MongoDB backend for the Reddit Help Map project.
