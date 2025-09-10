@@ -16,7 +16,11 @@ mongoose.connect(process.env.MONGO_URL)
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.error("Mongo error:", err));
 
-// ✅ Improved /api/posts route
+app.get("/", (req, res) => {
+  res.send("Backend is running! Go to /api/posts to see the data.");
+});
+
+
 app.get("/api/posts", async (req, res) => {
   try {
     // Fetch posts from Reddit
